@@ -1,0 +1,1 @@
+SCHTASKS /CREATE /SC DAILY /TN "MyTasks\CaseStudy task" /TR "D:\case.sh" /ST 11:30
