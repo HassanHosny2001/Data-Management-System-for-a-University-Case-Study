@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="report" prefHeight="793.0" prefWidth="1039.0" style="-fx-background-color: #00243C;" stylesheets="@m.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="casestudy.ReportController">
+   <children>
+      <TableView fx:id="avg_table" layoutX="144.0" layoutY="90.0" prefHeight="290.0" prefWidth="751.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="course_id_col" prefWidth="211.0" text="Course id" />
+            <TableColumn fx:id="course_name_col" prefWidth="214.0" text="Course name" />
+            <TableColumn fx:id="avg_grade_col" prefWidth="186.0" text="Average grade" />
+            <TableColumn fx:id="no_of_students_col" prefWidth="139.0" text="Number of Students" />
+         </columns>
+      </TableView>
+      <TableView fx:id="gpa_table" layoutX="28.0" layoutY="464.0" prefHeight="290.0" prefWidth="533.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="student_id_col" prefWidth="99.0" text="student id" />
+            <TableColumn fx:id="student_name_col" prefWidth="281.0" text="Student name" />
+            <TableColumn fx:id="gpa_col" prefWidth="152.0" text="CGPA" />
+         </columns>
+      </TableView>
+      <Text layoutX="294.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Grade For Each Course...">
+         <font>
+            <Font name="Verdana Bold Italic" size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.17061611374407581" endY="0.5213270142180095" startX="1.0" startY="0.15165876777251186">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="125.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CGPA For Each Student...">
+         <font>
+            <Font name="Verdana Bold Italic" size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.17061611374407581" endY="0.5213270142180095" startX="1.0" startY="0.15165876777251186">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <BarChart fx:id="chart" layoutX="579.0" layoutY="392.0" prefHeight="362.0" prefWidth="433.0" style="-fx-background-color: #ffffff;" title="Top 10 students CGPA">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

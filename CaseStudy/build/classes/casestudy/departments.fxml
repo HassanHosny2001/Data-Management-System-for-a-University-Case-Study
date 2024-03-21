@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="departement_form" prefHeight="900.0" prefWidth="1100.0" style="-fx-background-color: #A3B9C6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="casestudy.DepartmentsController">
+   <children>
+      <TableView fx:id="dept_tabel_view" layoutX="382.0" layoutY="28.0" prefHeight="451.0" prefWidth="619.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="deptview_dept_id_col" prefWidth="264.0" text="Departments_ID" />
+            <TableColumn fx:id="deptview_dept_name_col" prefWidth="353.0" text="Department_name" />
+         </columns>
+      </TableView>
+      <Label fx:id="deptview_dept_id_label" layoutX="15.0" layoutY="156.0" styleClass="main-btn" stylesheets="@m.css" text="Department_name" />
+      <TextField fx:id="deptview_dept_id_txtfield" layoutX="12.0" layoutY="194.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button fx:id="deptview_add_btn" layoutX="15.0" layoutY="245.0" mnemonicParsing="false" onAction="#deptview_addaction" prefHeight="40.0" prefWidth="120.0" styleClass="add-btn" stylesheets="@m.css" text="Add" />
+      <Button fx:id="deptview_delete_btn" layoutX="150.0" layoutY="245.0" mnemonicParsing="false" onAction="#deptview_deleteaction" prefHeight="40.0" prefWidth="120.0" styleClass="add-btn" stylesheets="@m.css" text="Delete" />
+      <TableView fx:id="courses_tabel_view" layoutX="294.0" layoutY="531.0" prefHeight="284.0" prefWidth="795.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="courseview_course_id_col" prefWidth="78.0" text="Course_id" />
+            <TableColumn fx:id="courseview_course_name_col" prefWidth="216.0" text="Course_Name" />
+            <TableColumn fx:id="courseview_description_col" prefWidth="295.0" text="course_describtion" />
+            <TableColumn fx:id="courseview_department_id_col" prefWidth="105.0" text="Department_id" />
+            <TableColumn fx:id="courseview_credit_col" prefWidth="100.0" text="Course_credits" />
+         </columns>
+      </TableView>
+      <Label fx:id="courseview_course_name_label" layoutX="16.0" layoutY="662.0" prefHeight="21.0" prefWidth="102.0" styleClass="main-btn" stylesheets="@m.css" text="Department_id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseview_course_name_txtfield" layoutX="13.0" layoutY="553.0" prefHeight="30.0" prefWidth="275.0" />
+      <Label fx:id="courseview_credit_label" layoutX="16.0" layoutY="526.0" prefWidth="135.0" styleClass="main-btn" stylesheets="@m.css" text="Course_Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseview_credit_txtfield" layoutX="13.0" layoutY="623.0" prefHeight="30.0" prefWidth="275.0" />
+      <Label fx:id="courseview_course_id_label1" layoutX="16.0" layoutY="593.0" styleClass="main-btn" stylesheets="@m.css" text="course_describtion">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="courseview_credit_label1" layoutX="16.0" layoutY="735.0" prefHeight="21.0" prefWidth="119.0" styleClass="main-btn" stylesheets="@m.css" text="credit_hoursit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseview_course_name_txtfield1" layoutX="13.0" layoutY="763.0" prefHeight="30.0" prefWidth="275.0" />
+      <TextField fx:id="courseview_course_name_txtfield2" layoutX="13.0" layoutY="693.0" prefHeight="30.0" prefWidth="275.0" />
+      <Button fx:id="courseview_add_btn" layoutX="16.0" layoutY="832.0" mnemonicParsing="false" onAction="#courseview_addaction" prefHeight="40.0" prefWidth="120.0" styleClass="add-btn" stylesheets="@m.css" text="Add" />
+      <Button fx:id="courseview_delete_btn" layoutX="151.0" layoutY="832.0" mnemonicParsing="false" onAction="#courseview_deleteaction" prefHeight="40.0" prefWidth="120.0" styleClass="add-btn" stylesheets="@m.css" text="Delete" />
+      <Label fx:id="deptview_dept_id_label1" layoutX="17.0" layoutY="94.0" text="Add New Department" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="deptview_dept_id_label11" layoutX="18.0" layoutY="471.0" text="Add New Course" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

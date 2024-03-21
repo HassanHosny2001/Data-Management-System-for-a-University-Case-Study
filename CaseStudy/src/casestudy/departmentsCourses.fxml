@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="departement_form" prefHeight="806.0" prefWidth="1100.0" style="-fx-background-color: #00243C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="casestudy.DepartmentsCoursesController">
+   <children>
+      <TableView fx:id="dept_tabel_view" layoutX="382.0" layoutY="14.0" prefHeight="451.0" prefWidth="619.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="deptview_dept_id_col" prefWidth="264.0" text="Departments_ID" />
+            <TableColumn fx:id="deptview_dept_name_col" prefWidth="353.0" text="Department_name" />
+         </columns>
+      </TableView>
+      <Label fx:id="deptview_dept_id_label" layoutX="15.0" layoutY="147.0" stylesheets="@m.css" text="Department_name">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <TextField fx:id="deptview_dept_name_txtfield" layoutX="12.0" layoutY="175.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button fx:id="deptview_add_btn" layoutX="15.0" layoutY="226.0" mnemonicParsing="false" onAction="#deptview_addaction" prefHeight="40.0" prefWidth="120.0" styleClass="update-btn" stylesheets="@m.css" text="Add" />
+      <Button fx:id="deptview_delete_btn" layoutX="150.0" layoutY="226.0" mnemonicParsing="false" onAction="#deptview_deleteaction" prefHeight="40.0" prefWidth="120.0" styleClass="update-btn" stylesheets="@m.css" text="Delete" />
+      <TableView fx:id="courses_tabel_view" layoutX="294.0" layoutY="477.0" prefHeight="284.0" prefWidth="795.0" stylesheets="@m.css">
+         <columns>
+            <TableColumn fx:id="courseview_course_id_col" prefWidth="78.0" text="Course_id" />
+            <TableColumn fx:id="courseview_course_name_col" prefWidth="216.0" text="Course_Name" />
+            <TableColumn fx:id="courseview_description_col" prefWidth="236.0" text="course_describtion" />
+            <TableColumn fx:id="courseview_department_id_col" prefWidth="95.0" text="Department_id" />
+            <TableColumn fx:id="courseview_credit_col" prefWidth="98.0" text="Course_credits" />
+            <TableColumn fx:id="courseview_semester_col" prefWidth="71.0" text="Semester" />
+         </columns>
+      </TableView>
+      <Label fx:id="courseview_course_name_label" layoutX="15.0" layoutY="537.0" prefHeight="21.0" prefWidth="141.0" stylesheets="@m.css" text="Department_id">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="courseview_course_name_txtfield" layoutX="12.0" layoutY="428.0" prefHeight="30.0" prefWidth="275.0" />
+      <Label fx:id="courseview_credit_label" layoutX="15.0" layoutY="401.0" prefWidth="135.0" stylesheets="@m.css" text="Course_Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="courseview_description_txtfield" layoutX="12.0" layoutY="498.0" prefHeight="30.0" prefWidth="275.0" />
+      <Label fx:id="courseview_course_id_label1" layoutX="15.0" layoutY="468.0" stylesheets="@m.css" text="Course_describtion">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="courseview_credit_label1" layoutX="15.0" layoutY="610.0" prefHeight="21.0" prefWidth="119.0" stylesheets="@m.css" text="Credit_hours">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="courseview_course_credits_txtfield1" layoutX="12.0" layoutY="638.0" prefHeight="30.0" prefWidth="135.0" />
+      <TextField fx:id="courseview_dept_id_txtfield2" layoutX="12.0" layoutY="568.0" prefHeight="30.0" prefWidth="135.0" />
+      <Button fx:id="courseview_add_btn" layoutX="15.0" layoutY="748.0" mnemonicParsing="false" onAction="#courseview_addaction" prefHeight="40.0" prefWidth="120.0" styleClass="update-btn" stylesheets="@m.css" text="Add" />
+      <Button fx:id="courseview_delete_btn" layoutX="150.0" layoutY="748.0" mnemonicParsing="false" onAction="#courseview_deleteaction" prefHeight="40.0" prefWidth="120.0" styleClass="update-btn" stylesheets="@m.css" text="Delete" />
+      <Label fx:id="deptview_dept_id_label1" layoutX="17.0" layoutY="94.0" text="Add New Department">
+         <font>
+            <Font name="Verdana Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="courseview_credit_label11" layoutX="16.0" layoutY="678.0" prefHeight="21.0" prefWidth="119.0" stylesheets="@m.css" text="Semester">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="courseview_semester_txtfield11" layoutX="13.0" layoutY="706.0" prefHeight="30.0" prefWidth="135.0" />
+      <Label fx:id="deptview_dept_id_label11" layoutX="17.0" layoutY="362.0" text="Add New Course">
+         <font>
+            <Font name="Verdana Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6980392336845398" green="0.6235294342041016" blue="0.6235294342041016" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

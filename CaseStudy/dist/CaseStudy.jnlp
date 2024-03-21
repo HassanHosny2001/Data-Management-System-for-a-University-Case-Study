@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CaseStudy.jnlp">
+  <information>
+    <title>CaseStudy</title>
+    <vendor>Hassan Hosny</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CaseStudy.jar" size="3498466" download="eager" />
+    <jar href="lib\commons-dbcp2-2.0.1.jar" size="167962" download="eager" />
+    <jar href="lib\commons-pool2-2.2-javadoc.jar" size="281759" download="eager" />
+    <jar href="lib\derby.jar" size="2766479" download="eager" />
+    <jar href="lib\derbyclient.jar" size="576624" download="eager" />
+    <jar href="lib\derbynet.jar" size="248898" download="eager" />
+    <jar href="lib\ojdbc6.jar" size="2152051" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CaseStudy" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="casestudy.CaseStudy"  name="CaseStudy" />
+  <update check="always"/>
+</jnlp>
