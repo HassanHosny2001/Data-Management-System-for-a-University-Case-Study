@@ -1,5 +1,5 @@
 # Data-Management-System-for-a-University-Case-Study
-
+![login_page](snapshots/login.png)
 # University Data Management System
 
 ## Objective
